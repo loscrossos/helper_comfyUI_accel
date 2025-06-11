@@ -107,6 +107,9 @@ python main.py  --fast fp16_accumulation --use-sage-attention
 
 # Comfy Portable (Windows)
 
+quick video demo of the instructions below for portable install:
+
+https://youtu.be/XKIDeBomaco?si=3ywduwYne2Lemf-Q
 
 
 locate virtual env: Open a terminal console (no admin rights needed) in the folder where you extracted comfyUI portable.
@@ -208,6 +211,10 @@ thats it. enjoy.
 
 
 # ComfyUI Desktop (Windows)
+
+quick vieeo demo for the instructions below:
+
+https://youtu.be/Mh3hylMSYqQ?si=obbeq6QmPiP0KbSx
 
 ### ensure the right version pre-requisites
 open a normal command terminal and run this. Ensure you get a value starting with "3.12". If not: do NOT proceed with this guide. You can however update comfyUI to the latest version, which comes with 3.12. then restart the guide.
