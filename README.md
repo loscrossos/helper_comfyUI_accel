@@ -20,7 +20,7 @@ Lets accelerate ComfyUI!
 
 First (applies to all guides!):
 
-**BACK UP YOUR INSTALL** 
+### BACK UP YOUR INSTALL
 
 before doing anything backup your install. this is done easily by making a copy of your venv
 
@@ -37,6 +37,10 @@ its the `python_embeded`  folder. make a copy of it. if things go wrong delete t
 **on manual install**
 
 its the virtual environment folder 
+
+
+
+### Needed Software
 
 - you need python 3.12 installed. not conda python but the real python. 
     - On windows:
