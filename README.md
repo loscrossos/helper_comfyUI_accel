@@ -167,14 +167,14 @@ it should look like this:
 
 **`run_nvidia_gpu.bat`**
 ```
-.\python_embeded\python.exe -s ComfyUI\main.py --windows-standalone-build --use-flash-attention
+.\python_embeded\python.exe -s ComfyUI\main.py --windows-standalone-build --use-sage-attention
 ```
 
 
 
 **`run_nvidia_gpu_fast_fp16_accumulation.bat`**
 ```
-.\python_embeded\python.exe -s ComfyUI\main.py --windows-standalone-build --fast fp16_accumulation --use-flash-attention
+.\python_embeded\python.exe -s ComfyUI\main.py --windows-standalone-build --fast fp16_accumulation --use-sage-attention
 ```
 
 
