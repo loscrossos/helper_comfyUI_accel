@@ -22,7 +22,10 @@ First (applies to all guides!):
 
 ### BACK UP YOUR INSTALL
 
-before doing anything backup your install. this is done easily by making a copy of your venv
+before doing anything backup your install. 
+You dont need to backip the whole comfy folder (which contains your models and what not)
+You only need to backup the folder of your virtual environment. this will be some 6-10GB depending on your setup.
+
 
 **on desktop install:**
 
@@ -36,8 +39,7 @@ its the `python_embeded`  folder. make a copy of it. if things go wrong delete t
 
 **on manual install**
 
-its the virtual environment folder 
-
+its the virtual environment folder  you created when installing comfyUI. its usually named ".venv" or similar.
 
 
 ### Needed Software
