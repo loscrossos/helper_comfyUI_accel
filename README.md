@@ -19,12 +19,39 @@ Lets accelerate ComfyUI!
 
 
 First (applies to all guides!):
+
+**BACK UP YOUR INSTALL** 
+
+before doing anything backup your install. this is done easily by making a copy of your venv
+
+**on desktop install:**
+
+its the folder: 
+
+`%USERPROFILE%\Documents\ComfyUI\.venv`
+
+**on portsble install:** 
+
+its the `python_embeded`  folder. make a copy of it. if things go wrong delete the original and put the copy back in.
+
+**on manual install**
+
+its the virtual environment folder 
+
 - you need python 3.12 installed. not conda python but the real python. 
     - On windows:
         - install it on your own from https://www.python.org/
         -  or download my one click installer:
             - `installer_win_python312.bat` from https://github.com/loscrossos/crossos_setup/tree/main/win/installers
     - Linux: you likely have it already if you already have comfy ui installed.
+
+- on windows; you will need msvc installed. if not already installed you can install it like so:
+on an admin console run (this is like 3gb download)
+
+```
+%userprofile%\AppData\Local\Microsoft\WindowsApps\winget install --id=Microsoft.VisualStudio.2022.BuildTools --force --override "--wait --passive --add Microsoft.VisualStudio.Component.VC.Tools.x86.x64 --add Microsoft.VisualStudio.Component.Windows11SDK.26100 --add  Microsoft.VisualStudio.Component.VC.CMake.Project"  -e  --silent --accept-package-agreements --accept-source-agreements
+```
+
 
 Install it and reboot your PC. this is the only step where you need admin rights. All of the following can (and should) be done from a non-admin account.
 
