@@ -325,4 +325,11 @@ if any of the checks fail then do not proceed with the guide.  You can however u
 
 - if you have problems with sageattention just remove the activation entry "use-sage-attention" to the way it was before and your comfy will simply not use it. It will work with the normal pytorch attention just as before.
 
+- For people who might be getting the error: wuth tcc and includes in the logs: They are missing the python headers.
+ - you need to install python 3.12 (not from conda!)
+ - alternstively you can get the headers and copy them in the ComfyUI_windows_portable\python_embeded\ then it should work fine. you can take it from the main python 312 install. installing as described above should suffice.
+
+
+
+
 - if you have problems post an issue with as much of the console errors as possible, your system info and ideally an example workflow so i can reproduce the error. will do my best to help
