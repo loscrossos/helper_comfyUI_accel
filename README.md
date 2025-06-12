@@ -322,3 +322,7 @@ enjoy!
 # Troubleshooting
 
 if any of the checks fail then do not proceed with the guide.  You can however update your comfyUI installation to the latest version. It comes with python 3.12 and CUDA 12. then  restart the guide.
+
+- if you have problems with sageattention just remove the activation entry "use-sage-attention" to the way it was before and your comfy will simply not use it. It will work with the normal pytorch attention just as before.
+
+- if you have problems post an issue with as much of the console errors as possible, your system info and ideally an example workflow so i can reproduce the error. will do my best to help
