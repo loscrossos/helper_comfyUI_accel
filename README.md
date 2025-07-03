@@ -12,6 +12,8 @@ This setup will:
 
 You can use only Flash-attention or Sage-Attention at the same time. Since Sage is the best we will only activate that.
 
+### News
+- 2025.07.03: Sageattention2++: v.2.2.0
 
 ## Pre-Requisites
 
@@ -40,6 +42,37 @@ its the `python_embeded`  folder. make a copy of it. if things go wrong delete t
 **on manual install**
 
 its the virtual environment folder  you created when installing comfyUI. its usually named ".venv" or similar.
+
+### The right file
+
+For optimal results we need to find out your pytorch version. open a command window in your comfyUI folder and paste this:
+
+```
+python_embeded\python -m pip show torch
+```
+you will see somethin like this
+
+````
+d:\ComfyUI_windows_portable>python_embeded\python -m pip show torch
+
+Name: torch
+Version: 2.7.1+cu128
+Summary: Tensors and Dynamic neural networks in Python with strong GPU acceleration
+Home-page: https://pytorch.org/
+Author: PyTorch Team
+Author-email: packages@pytorch.org
+License: BSD-3-Clause
+Location: d:\gh_test\ComfyUI_windows_portable\python_embeded\Lib\site-packages
+Requires: filelock, fsspec, jinja2, networkx, setuptools, sympy, typing-extensions
+Required-by: accelerate, flash_attn, kornia, spandrel, torchaudio, torchsde, torchvision, xformers
+````
+
+You need the Version value: here `2.7.1`. the `+cu128` (or any other value with `cu`) says you are using the cuda enabled version.
+
+If you have Torch `2.7.0` you can use this project.
+
+If you have `2.7.1` then use my other project which is going to be the main project in the future: https://github.com/loscrossos/crossOS_acceleritor
+
 
 
 ### Needed Software
@@ -70,9 +103,13 @@ Depending on which install type you have you choose one of the three following g
 
 # ComfyUI manual install (Windows Linux)
 
-1. Download `accelerated_270_312.txt` from my repository and put it in your comfyUI folder.
+## First install
+
+when first installing comfyUI you can set it right from the getgo. lets do it.
+
+1. Download `accelerated_270_312.txt` file from my repository and put it in your comfyUI folder.
 2. Open a terminal in your comfyUI directory.
-3. delete your old virtual environment (the ".venv" folder NOT the whole comfyUI directory!). We will recreate it.
+3. Backup your old virtual environment (the ".venv" folder NOT the whole comfyUI directory!). We will recreate it. You will need to reinstall your node requirements afterwards if you had any. You can delete it if everything went right.
 
 4. Create and activate a python virtual environment  
 
@@ -107,8 +144,36 @@ python main.py  --fast fp16_accumulation --use-sage-attention
 ```
 
 
+## Update
+
+if my files have been updated, the update process is easy: its the same as the initial process but we just dont create the virtual environment:
 
 
+1. Download the new `accelerated_270_312.txt` from my repository and put it in your comfyUI folder.
+2. Open a terminal in your comfyUI directory.
+3. activate the python virtual environment 
+
+task       |  Windows                  | Linux
+---        |  ---                      | ---
+activate it|`.env_win\Scripts\activate`|`. ./.env_lin/bin/activate`
+
+
+At this point you should see at the left of your prompt the name of your environment (e.g. `(.env_win)`)
+
+
+5. Install the accelerator libraries (CrossOS):
+```
+pip install -r accelerated_270_312.txt
+```
+
+6. now install the comfy UI libraries
+
+```
+pip install -r requirements.txt
+```
+
+
+enjoy
 
 
 
