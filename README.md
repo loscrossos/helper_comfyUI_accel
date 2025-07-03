@@ -13,7 +13,7 @@ This setup will:
 You can use only Flash-attention or Sage-Attention at the same time. Since Sage is the best we will only activate that.
 
 ### News
-- 2025.07.03: Sageattention2++: v.2.2.0
+- 2025.07.03: Sageattention2++: v.2.2.0 (Pytorch 2.7.0 and 2.7.1). Read new chapter "the right file" for details.
 
 ## Pre-Requisites
 
@@ -213,6 +213,8 @@ https://youtu.be/XKIDeBomaco?si=3ywduwYne2Lemf-Q
 locate virtual env: Open a terminal console (no admin rights needed) in the folder where you extracted comfyUI portable.
 
 
+The procedure is the same for the first time you use this file or if you update it with newer versions of the file.
+
 ### ensure the right version pre-requisites
 
 **Check Python**: run this and ensure you get a value starting with "3.12". If not: do NOT proceed with this guide.
@@ -228,7 +230,8 @@ Now lets check torch is using CUDA 12.
 ```
 .\python_embeded\python.exe -m pip show torch
 ```
-the line with the version should have the value "+cu12x". It does not matter if its 2.7.0 or 2.7.1 or other values.
+the line with the version should have the value "+cu12x".  
+
 
 e.g.
 
@@ -288,9 +291,7 @@ Using sage attention
 thats it. enjoy.
 
 
-
-
-
+ 
 
 
 
