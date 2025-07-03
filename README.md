@@ -13,7 +13,7 @@ This setup will:
 You can use only Flash-attention or Sage-Attention at the same time. Since Sage is the best we will only activate that.
 
 ### News
-- 2025.07.03: Sageattention2++: v.2.2.0 (Pytorch 2.7.0 and 2.7.1). Read new chapter "the right file" for details.
+- 2025.07.03: **Sageattention2++: v.2.2.0** (Pytorch 2.7.0 and 2.7.1). Read new chapter "the right file" for details.
 
 ## Pre-Requisites
 
