@@ -8,7 +8,7 @@ torch==2.7.0
 torchsde
 torchvision
 torchaudio
-xformers==0.0.30 ; sys_platform  != 'darwin'
+xformers ; sys_platform  != 'darwin'
 
 
 #TRITON*************************************
