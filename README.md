@@ -391,10 +391,15 @@ if any of the checks fail then do not proceed with the guide.  You can however u
 
 - if you have problems with sageattention just remove the activation entry "use-sage-attention" to the way it was before and your comfy will simply not use it. It will work with the normal pytorch attention just as before.
 
-- Sage-Attention: For people who might be getting the error: with tcc and includes or someting along "python.h missing" in the logs: this is due to you not having Python properly installed. This comes from having e.g. comfyportable which brings its own python but its missing files.
- - you need to install python 3.12 on your system (not from conda!)
- - alternatively you can get the headers and copy them in the venv then it should work fine. you can take it from the main python 312 install. installing as described above should suffice.
- - you can follow this guide: https://github.com/woct0rdho/triton-windows?tab=readme-ov-file#8-special-notes-for-comfyui-with-embeded-python
+- Sage-Attention: For people who might be getting these errors in the console: 
+    - tcc and includes
+    - something along "python.h missing"
+    - "Failed to compile. cc_cmd" 
+    
+    this is due to you not having Python properly installed. This comes from having e.g. comfyportable which brings its own python but its missing files.
+    - you need to install python 3.12 on your system (not from conda!)
+    - alternatively you can get the headers and copy them in the venv then it should work fine. you can take it from the main python 312 install. installing as described above should suffice.
+    - you can follow this guide: https://github.com/woct0rdho/triton-windows?tab=readme-ov-file#8-special-notes-for-comfyui-with-embeded-python
 
 
 
