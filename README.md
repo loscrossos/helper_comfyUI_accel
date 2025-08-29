@@ -2,7 +2,10 @@
 
 The ridiculously easy guide.
 
-
+---
+**edit: AUG30  pls see latest update and use the  https://github.com/loscrossos/crossOS_acceleritor  project with the 280 file.**
+you can follow this guide but for comfyUI you can use "acceleritor_python312torch280cu129_lite.txt". Stay tuned for another massive update soon.
+---
 
 This setup will:
 
